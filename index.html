@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FurnitureCollect</title>
+   <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
+   <link rel="stylesheet" href="lib/css/swiper-bundle.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <div class="header__body">
+               <a href='#' class="header__logo">Travel</a>
+               <nav class="header__nav">
+                  <div class="header__burger" id="burger">
+                     <i class="bx bx-menu header__burger-icon"></i>
+                  </div>
+                  <ul class="header__list">
+                     <li>
+                        <a href="#" class="header__link">
+                           Home
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="header__link">
+                           Explore
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="header__link">
+                           Destinations
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="header__link">
+                           Hotels
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <section class="section section-show">
+            <div class="swiper-container">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide section-show__slide">
+                     <div class="section-show__body container">
+                        <div class="section-show__info">
+                           <h2 class="section-show__subtitle">Islands</h2>
+                           <h1 class="section-show__title">Bora Bora</h1>
+                           <p class="section-show__text">Small South Pacific island northwest of Tahiti in French
+                              Polynesia, surrounded by
+                              motus.
+                           </p>
+                           <a href="#" class="section-show__link">
+                              Explore
+                              <i class="bx bx-right-arrow-alt islands__button-icon"></i>
+                           </a>
+                        </div>
+                        <div class="section-show__btn" data-video='bora-bora'>
+                           <i class="bx bx-play-circle islands__video-icon"></i>
+                        </div>
+                     </div>
+                     <img src="img/borabora.jpg" alt="borabora">
+                  </div>
+                  <div class="swiper-slide section-show__slide">
+                     <div class="section-show__body container">
+                        <div class="section-show__info">
+                           <h2 class="section-show__subtitle">Islands</h2>
+                           <h1 class="section-show__title">Bali</h1>
+                           <p class="section-show__text">It is an Indonesian island known and beautiful for its lush
+                              active volcanic mountains.
+                           </p>
+                           <a href="#" class="section-show__link">
+                              Explore
+                              <i class="bx bx-right-arrow-alt islands__button-icon"></i>
+                           </a>
+                        </div>
+                        <div class="section-show__btn" data-video='bali'>
+                           <i class="bx bx-play-circle islands__video-icon"></i>
+                        </div>
+                     </div>
+                     <img src="img/bali.jpg" alt="bali">
+                  </div>
+                  <div class="swiper-slide section-show__slide">
+                     <img src="img/palawan.jpg" alt="palawan">
+                     <div class="section-show__body container">
+                        <div class="section-show__info">
+                           <h2 class="section-show__subtitle">Islands</h2>
+                           <h1 class="section-show__title">Palawan</h1>
+                           <p>Also known as La Paragua, it is the largest island in the province of Palawan.
+                           </p>
+                           <a href="#" class="section-show__link">
+                              Explore
+                              <i class="bx bx-right-arrow-alt islands__button-icon"></i>
+                           </a>
+                        </div>
+                        <div class="section-show__btn" data-video='palawan'>
+                           <i class="bx bx-play-circle islands__video-icon"></i>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slider-thombs section-show__thombs">
+               <div class="swiper-wrapper slider-thombs__wrapper">
+                  <img class="swiper-slide slider-thombs__slide" src="img/borabora.jpg" alt="borabora">
+                  <img class="swiper-slide slider-thombs__slide" src="img/bali.jpg" alt="bali">
+                  <img class="swiper-slide slider-thombs__slide" src="img/palawan.jpg" alt="palawan">
+               </div>
+            </div>
+         </section>
+      </main>
+      <div class="popaps-videos" id="popaps-videos">
+         <div class="popaps-videos__body">
+            <div class="popaps-videos__content">
+               <div class="popaps-videos__close" id="popup-close">
+                  <i class="bx bx-x"></i>
+               </div>
+               <iframe src="https://www.youtube.com/embed/FmzHq3U0UFE" title="YouTube video player" frameborder="0"
+                  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="lib/js/swiper-bundle.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script> -->
+   <script src="lib/js/gsap.min.js"></script>
+   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
